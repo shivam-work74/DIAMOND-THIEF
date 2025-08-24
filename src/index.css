@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-[#0a0a1a] via-[#1a0033] to-[#330066] text-white overflow-x-hidden m-0 font-sans;
+}
+
+/* Header glow */
+@keyframes pulse-glow {
+  0%,100% { text-shadow:0 0 10px #0ff,0 0 20px #f0f,0 0 30px #ff0; }
+  50% { text-shadow:0 0 20px #0ff,0 0 30px #f0f,0 0 40px #ff0; }
+}
+.animate-pulse-glow { animation:pulse-glow 2s ease-in-out infinite; }
+
+/* Canvas glow */
+.glow-canvas {
+  box-shadow:0 0 20px #fff,0 0 40px #0ff,0 0 60px #f0f;
+  border-radius:1rem;
+}
