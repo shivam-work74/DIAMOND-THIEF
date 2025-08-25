@@ -18,3 +18,13 @@ body {
   box-shadow:0 0 20px #fff,0 0 40px #0ff,0 0 60px #f0f;
   border-radius:1rem;
 }
+.glow-canvas {
+  box-shadow: 0 0 40px 10px #00eaff55, 0 0 80px 20px #fff2;
+  transition: box-shadow 0.3s;
+}
+@media (max-width: 600px) {
+  .glow-canvas {
+    border-width: 2px;
+    border-radius: 12px;
+  }
+}
